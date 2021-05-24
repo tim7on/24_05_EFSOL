@@ -79,7 +79,7 @@ namespace Lesson3_task2
     }
     class Pupil
     {
-        string name = "Pupil";
+        readonly string name = "Pupil";
         public virtual void Study() 
         {
             Console.WriteLine($"{name} Учиться на 3");
@@ -94,9 +94,9 @@ namespace Lesson3_task2
             Console.WriteLine($"{name} Отдыхает на 3");
         }
     }
-    class ExcelentPupil : Pupil
+    class ExcelentPupil : Pupil 
     {
-        string name = "ExcelentPupil";
+        readonly string name = "ExcelentPupil";
         public override void Study()
         {
             Console.WriteLine($"{name} Учиться на 5");
@@ -116,7 +116,7 @@ namespace Lesson3_task2
     }
     class GoodPupil : Pupil
     {
-        string name = "GoodPupil";
+        readonly string name = "GoodPupil";
         public override void Study()
         {
             Console.WriteLine($"{name} Учиться на 4");
@@ -136,7 +136,7 @@ namespace Lesson3_task2
     }
     class BadPupil : Pupil
     {
-        string name = "BadPupil";
+        readonly string name = "BadPupil";
         public override void Study()
         {
             Console.WriteLine($"{name} Учиться на 2");
