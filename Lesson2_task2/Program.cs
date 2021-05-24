@@ -4,12 +4,8 @@ namespace Lesson2_task2
 {
     class Converter
     {
-        double usd, eur, rub, result;
+        double usd, eur, rub;
 
-        public double Result
-        {
-            get { return result; }
-        }
         public Converter(double usd, double eur, double rub)
         {
             this.usd = usd;
