@@ -17,86 +17,157 @@ namespace Lesson3_task2
 {
     class ClassRoom
     {
+        Pupil[] pupils = new Pupil[4];
 
+        public ClassRoom(Pupil pup1, Pupil pup2)
+        {
+            pupils[0] = pup1;
+            pupils[1] = pup2;
+            pupils[2] = rndPupil();
+            pupils[3] = rndPupil();
+
+        }
+        public ClassRoom(Pupil pup1, Pupil pup2, Pupil pup3)
+        {
+            pupils[0] = pup1;
+            pupils[1] = pup2;
+            pupils[2] = pup3;
+            pupils[3] = rndPupil();
+
+        }
+        private Pupil rndPupil()
+        {
+            Random rand = new Random();
+            int rnd = rand.Next(1, 4);
+            switch (rnd)
+            {
+                case 1: return new Pupil();
+                case 2: return new GoodPupil();
+                case 3: return new ExcelentPupil();
+                default: break;
+            }
+            return new BadPupil();
+        }
+        public void Study()
+        {
+            for (int i = 0; i < pupils.Length; i++)
+            {
+                pupils[i].Study();
+            }
+        }
+        public void Read()
+        {
+            for (int i = 0; i < pupils.Length; i++)
+            {
+                pupils[i].Read();
+            }
+        }
+        public void Write()
+        {
+            for (int i = 0; i < pupils.Length; i++)
+            {
+                pupils[i].Write();
+            }
+        }
+        public void Relax()
+        {
+            for (int i = 0; i < pupils.Length; i++)
+            {
+                pupils[i].Relax();
+            }
+        }
     }
     class Pupil
     {
-        void Study() 
+        string name = "Pupil";
+        public virtual void Study() 
         {
-            Console.WriteLine("Учиться на 3");
+            Console.WriteLine($"{name} Учиться на 3");
         }
-        void Read() {
-            Console.WriteLine("Читает на 3");
+        public virtual void Read() {
+            Console.WriteLine($"{name} Читает на 3");
         }
-        void Write() {
-            Console.WriteLine("Пишет на 3");
+        public virtual void Write() {
+            Console.WriteLine($"{name} Пишет на 3");
         }
-        void Relax() {
-            Console.WriteLine("Отдыхает на 3");
+        public virtual void Relax() {
+            Console.WriteLine($"{name} Отдыхает на 3");
         }
     }
     class ExcelentPupil : Pupil
     {
-        void Study()
+        string name = "ExcelentPupil";
+        public override void Study()
         {
-            Console.WriteLine("Учиться на 5");
+            Console.WriteLine($"{name} Учиться на 5");
         }
-        void Read()
+        public override void Read()
         {
-            Console.WriteLine("Читает на 5");
+            Console.WriteLine($"{name} Читает на 5");
         }
-        void Write()
+        public override void Write()
         {
-            Console.WriteLine("Пишет на 5");
+            Console.WriteLine($"{name} Пишет на 5");
         }
-        void Relax()
+        public override void Relax()
         {
-            Console.WriteLine("Отдыхает на 0");
+            Console.WriteLine($"{name} Отдыхает на 0");
         }
     }
     class GoodPupil : Pupil
     {
-        void Study()
+        string name = "GoodPupil";
+        public override void Study()
         {
-            Console.WriteLine("Учиться на 4");
+            Console.WriteLine($"{name} Учиться на 4");
         }
-        void Read()
+        public override void Read()
         {
-            Console.WriteLine("Читает на 4");
+            Console.WriteLine($"{name} Читает на 4");
         }
-        void Write()
+        public override void Write()
         {
-            Console.WriteLine("Пишет на 4");
+            Console.WriteLine($"{name} Пишет на 4");
         }
-        void Relax()
+        public override void Relax()
         {
-            Console.WriteLine("Отдыхает на 1");
+            Console.WriteLine($"{name} Отдыхает на 1");
         }
     }
     class BadPupil : Pupil
     {
-        void Study()
+        string name = "BadPupil";
+        public override void Study()
         {
-            Console.WriteLine("Учиться на 2");
+            Console.WriteLine($"{name} Учиться на 2");
         }
-        void Read()
+        public override void Read()
         {
-            Console.WriteLine("Читает на 2");
+            Console.WriteLine($"{name} Читает на 2");
         }
-        void Write()
+        public override void Write()
         {
-            Console.WriteLine("Пишет на 2");
+            Console.WriteLine($"{name} Пишет на 2");
         }
-        void Relax()
+        public override void Relax()
         {
-            Console.WriteLine("Отдыхает на 5");
+            Console.WriteLine($"{name} Отдыхает на 5");
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            
+            Pupil pup1 = new ExcelentPupil();
+            Pupil pup2 = new BadPupil();
+            ClassRoom newClassRoom = new ClassRoom(pup1, pup2);
+            newClassRoom.Read();
+            Console.WriteLine("\n");
+            newClassRoom.Write();
+            Console.WriteLine("\n");
+            newClassRoom.Study();
+            Console.WriteLine("\n");
+            newClassRoom.Relax();
         }
     }
 }
