@@ -9,7 +9,7 @@ namespace lesson_1_task_2
             Rectangle rectangle = new Rectangle(2, 2);
 
             Console.WriteLine($"Площадь прямоугольника: {rectangle.Area}");
-            Console.WriteLine($"Периметр прямоугольника: {rectangle.Perimeter}");
+            Console.WriteLine($"Периметр прямоугольника: {rectangle.Perimeter}");  
 
             Console.ReadKey();
         }
