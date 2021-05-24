@@ -2,11 +2,17 @@
 
 namespace Lesson1_task3
 {
-     public class Book
+     class Book
     {
         Title title = new Title();
         Author author = new Author();
         Content content = new Content();
+        public Book(string inTitle, string inAuthor, string inContent)
+        {
+            title.field = inTitle;
+            author.field = inAuthor;
+            content.field = inContent;
+        }
         public void Show()
         {
             title.Show();
@@ -14,60 +20,35 @@ namespace Lesson1_task3
             content.Show();
         }
     }
-    public class Title
+    class Title
     {
-        string field;
-        public string Property
-        {
-            get
-            {
-                return field;
-            }
-            set
-            {
-                field = value;
-            }
-        }
+        public string field;
         public void Show()
         {
+            ConsoleColor foreground = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(field);
         }
     }
     class Author
     {
-        string field;
-        public string Property
-        {
-            get
-            {
-                return field;
-            }
-            set
-            {
-                field = value;
-            }
-        }
+        public string field;
         public void Show()
         {
+            ConsoleColor foreground = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Red;
+
             Console.WriteLine(field);
+            Console.ResetColor();
         }
     }
     class Content
     {
-        string field;
-        public string Property
-        {
-            get
-            {
-                return field;
-            }
-            set
-            {
-                field = value;
-            }
-        }
+        public string field;
         public void Show()
         {
+            ConsoleColor foreground = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(field);
         }
     }
@@ -84,7 +65,8 @@ namespace Lesson1_task3
         */
         static void Main(string[] args)
         {
-            
+            Book newBook = new Book("допустим","новая","Книга");
+            newBook.Show();
         }
     }
 }
