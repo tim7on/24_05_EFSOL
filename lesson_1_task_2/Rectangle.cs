@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace lesson_1_task_2
+﻿namespace lesson_1_task_2
 {
     class Rectangle
     {
@@ -9,7 +7,7 @@ namespace lesson_1_task_2
 
         public Rectangle(double side1, double side2)
         {
-            this.side1 = side1;
+            this.side1 = side1;   
             this.side2 = side2;
         }
 
