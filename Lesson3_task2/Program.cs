@@ -1,6 +1,6 @@
 ﻿using System;
 /*
- * Задание 2 
+Задание 2 
 Используя Visual Studio, создайте проект по шаблону Console Application. 
 Требуется: 
 Создать класс, представляющий учебный класс ClassRoom. 
@@ -17,10 +17,7 @@ namespace Lesson3_task2
 {
     class ClassRoom
     {
-        public ClassRoom(Pupil name)
-        {
-           
-        }
+
     }
     class Pupil
     {
@@ -99,7 +96,7 @@ namespace Lesson3_task2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
