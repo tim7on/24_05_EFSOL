@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24_05_EFSOL", "24_05_EFSOL\24_05_EFSOL.csproj", "{20D7FBEA-B5CA-4CA5-8A1F-8D56F070A47B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "24_05_EFSOL", "24_05_EFSOL\24_05_EFSOL.csproj", "{20D7FBEA-B5CA-4CA5-8A1F-8D56F070A47B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson1_task3", "Lesson1_task3\Lesson1_task3.csproj", "{08E76154-A1E7-495D-B28E-6C3495B04F6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson1_task3", "Lesson1_task3\Lesson1_task3.csproj", "{08E76154-A1E7-495D-B28E-6C3495B04F6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson2_task2", "Lesson2_task2\Lesson2_task2.csproj", "{30C2EECC-7A77-4BB0-8C95-3D7F68EA230D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson2_task2", "Lesson2_task2\Lesson2_task2.csproj", "{30C2EECC-7A77-4BB0-8C95-3D7F68EA230D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson3_task2", "Lesson3_task2\Lesson3_task2.csproj", "{12C882B4-8528-4652-B980-C2719454FEAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson3_task2", "Lesson3_task2\Lesson3_task2.csproj", "{12C882B4-8528-4652-B980-C2719454FEAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson_1_task_2", "lesson_1_task_2\lesson_1_task_2.csproj", "{22394EDD-DBD2-470D-BDAB-47AE77E24627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson_1_task_3", "lesson_1_task_3\lesson_1_task_3.csproj", "{F0951FE6-3422-4985-AD2F-D05F0027D016}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson_2_task_3", "lesson_2_task_3\lesson_2_task_3.csproj", "{57D90886-3EC4-4405-9721-E11B4284EA9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson_2_task_4", "lesson_2_task_4\lesson_2_task_4.csproj", "{8DAA3C2A-20AA-4321-81A6-D3240C91EDD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{12C882B4-8528-4652-B980-C2719454FEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12C882B4-8528-4652-B980-C2719454FEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12C882B4-8528-4652-B980-C2719454FEAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22394EDD-DBD2-470D-BDAB-47AE77E24627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22394EDD-DBD2-470D-BDAB-47AE77E24627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22394EDD-DBD2-470D-BDAB-47AE77E24627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22394EDD-DBD2-470D-BDAB-47AE77E24627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0951FE6-3422-4985-AD2F-D05F0027D016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0951FE6-3422-4985-AD2F-D05F0027D016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0951FE6-3422-4985-AD2F-D05F0027D016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0951FE6-3422-4985-AD2F-D05F0027D016}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57D90886-3EC4-4405-9721-E11B4284EA9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D90886-3EC4-4405-9721-E11B4284EA9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D90886-3EC4-4405-9721-E11B4284EA9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D90886-3EC4-4405-9721-E11B4284EA9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DAA3C2A-20AA-4321-81A6-D3240C91EDD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DAA3C2A-20AA-4321-81A6-D3240C91EDD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DAA3C2A-20AA-4321-81A6-D3240C91EDD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DAA3C2A-20AA-4321-81A6-D3240C91EDD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
