@@ -8,7 +8,7 @@ namespace lesson_2_task_3
         private string surname;
         private string position;
         private int experience;
-        private double tax;
+        private double tax = 0.90;
 
         public Employee(string name, string surname)
         {
@@ -23,7 +23,7 @@ namespace lesson_2_task_3
 
         private string Surname
         {
-            get { return Surname; }
+            get { return surname; }
         }
 
         public string Position
@@ -40,8 +40,7 @@ namespace lesson_2_task_3
 
         private double Tax
         {
-            get { return Tax; }
-            set { tax = value; }
+            get { return tax; }
         }
     }
 }

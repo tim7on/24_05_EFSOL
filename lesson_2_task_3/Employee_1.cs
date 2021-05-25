@@ -2,14 +2,9 @@
 
 namespace lesson_2_task_3
 {
-    partial class Employee_1
+    partial class Employee
     {
         private double salary = 10000;
-
-        public void Show()
-        {
-            Console.WriteLine();
-        }
 
         private double WhatPosition(string position)
         {
@@ -58,6 +53,15 @@ namespace lesson_2_task_3
             return percent;
         }
 
-        public void 
+        public void EmployeeInfo()
+        {
+            double posPercent = WhatPosition(Position);
+            double expPercent = WhatExperience(Experience);
+
+            double result = (salary * posPercent * expPercent) * Tax;
+            double per = 100 - (Tax * 100);
+
+            Console.WriteLine($"{Name}\n{Surname}\n{Position}\nОклад: {result}\nНалог: {per}%");
+        }
     }
 }
