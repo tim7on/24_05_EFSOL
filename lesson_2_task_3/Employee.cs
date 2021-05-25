@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace lesson_2_task_3
+﻿namespace lesson_2_task_3
 {
     partial class Employee
     {

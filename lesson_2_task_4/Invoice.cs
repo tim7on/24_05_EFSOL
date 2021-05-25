@@ -7,8 +7,8 @@ namespace lesson_2_task_4
         private readonly int account;
         private readonly string customer;
         private readonly string provider;
-        private string article = "flour";
-        private int quantity = 50;
+        private string Article { get; } = "flour";
+        private int Quantity { get; } = 50;
 
         public Invoice(int account, string customer, string provider)
         {
@@ -21,7 +21,6 @@ namespace lesson_2_task_4
         {
             get { return account; }
         }
-
         private string Customer
         {
             get { return customer; }
@@ -29,14 +28,6 @@ namespace lesson_2_task_4
         private string Provider
         {
             get { return provider; }
-        }
-        private int Quantity
-        {
-            get { return quantity; }
-        }
-        private string Article
-        {
-            get { return article; }
         }
 
         public void Show()
