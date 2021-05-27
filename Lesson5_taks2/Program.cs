@@ -7,7 +7,8 @@
 среднее арифметическое всех элементов, вывести все нечетные значения. */
 namespace Lesson5_taks2
 {
-    class ArrayActions
+
+    class Program
     {
         public static int ArrayMin(Array x)
         {
@@ -41,19 +42,16 @@ namespace Lesson5_taks2
             int result = ArraySum(x) / x.Length;
             return result;
         }
-         public static void ArrayEven(Array x)
+        public static void ArrayEven(Array x)
         {
             Console.Write("Even:\t");
             foreach (int number in x)
             {
-                string i = number % 2 == 0 ?  $"{number}," : "";
+                string i = number % 2 == 0 ? $"{number}," : "";
                 Console.Write("{0}", i);
             }
             Console.WriteLine();
         }
-    }
-    class Program
-    {
 
         static void Main(string[] args)
         {
@@ -70,11 +68,11 @@ namespace Lesson5_taks2
                         array[i] = rnd.Next(0,999);
                         Console.WriteLine(array[i]);
                     }
-                    Console.WriteLine("Minimum: {0}",ArrayActions.ArrayMin(array));
-                    Console.WriteLine("Maximum: {0}", ArrayActions.ArrayMax(array));
-                    Console.WriteLine("Sum: {0}", ArrayActions.ArraySum(array));
-                    Console.WriteLine("Average: {0}", ArrayActions.ArrayAverage(array));
-                    ArrayActions.ArrayEven(array);
+                    Console.WriteLine("Minimum: {0}", ArrayMin(array));
+                    Console.WriteLine("Maximum: {0}", ArrayMax(array));
+                    Console.WriteLine("Sum: {0}", ArraySum(array));
+                    Console.WriteLine("Average: {0}", ArrayAverage(array));
+                    ArrayEven(array);
                     Console.WriteLine(new string('-', 25));
                 }
             }
